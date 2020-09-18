@@ -1,0 +1,16 @@
+.checkout {
+    display: flex;
+    margin: 20px;
+    height: max-content;
+}
+
+.checkout__ad {
+    width: 100%;
+    min-width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.checkout__imgContainer {
+    width: 100%;
+}

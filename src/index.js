@@ -1,13 +1,31 @@
 import React from "react";
 import ReactDOM from "react-dom";
 //import "./index.css";
-//import App from "./App";
-import Form from "./components/Form";
+import App from "./App";
+import {
+    StateProvider
+} from "./components/StateProvider";
+
 
 import * as serviceWorker from "./serviceWorker";
-import BankDashboard from './components/BankDashboard';
+import reducer, {
+    initialState
+} from "./components/Reducer";
 
-ReactDOM.render( < BankDashboard / > , document.getElementById("root"));
+
+ReactDOM.render( <
+    StateProvider initialState = {
+        initialState
+    }
+    reducer = {
+        reducer
+    } >
+    <
+    App / >
+    <
+    /StateProvider>
+
+    , document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
