@@ -29,7 +29,9 @@ function Header() {
       <div className="header__nav">
         <Link to={!user && "/login"} className="header__link">
           <div onClick={login} className="header__option">
-            <span className="header__optionLineOne">hello {user?.email}</span>
+            <span className="header__optionLineOne">
+              hello {!user ? "Guest" : user?.email}
+            </span>
             <span className="header__optionLineTwo">
               {user ? "Log out" : "log in"}
             </span>
@@ -47,7 +49,7 @@ function Header() {
             <span className="header__optionLineTwo">Prize</span>
           </div>
         </Link>
-        <Link className="header__link">
+        <Link to="/checkout/" className="header__link">
           <div className="header__optionBasket">
             <span className="header__optionLineTwo header__basketCount">
               {basket?.length}

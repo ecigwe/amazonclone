@@ -12,21 +12,7 @@ export const getBasketPrice = (basket) => {
 }
 
 export const initialState = {
-    basket: [{
-            id: "234",
-            title: "hello Phone",
-            price: 345,
-            rating: 4,
-            image: "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/July/amazonbasics_520x520._SY304_CB442725065_.jpg",
-        },
-        {
-            id: "230",
-            title: "hello Phone",
-            price: 345,
-            rating: 4,
-            image: "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/July/amazonbasics_520x520._SY304_CB442725065_.jpg",
-        },
-    ],
+    basket: [],
     user: null,
 };
 
